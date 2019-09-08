@@ -12,6 +12,7 @@
 		2F4CD35D23245CC30008E02D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CD35B23245CC30008E02D /* Main.storyboard */; };
 		2F4CD35F23245CC50008E02D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CD35E23245CC50008E02D /* Assets.xcassets */; };
 		2F4CD36223245CC50008E02D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4CD36023245CC50008E02D /* LaunchScreen.storyboard */; };
+		99F350454F1C1A62B508109F /* Pods_Nate_Arc1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3935133E259CF02F2C47FC62 /* Pods_Nate_Arc1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2F4CD35E23245CC50008E02D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4CD36123245CC50008E02D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F4CD36323245CC50008E02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3935133E259CF02F2C47FC62 /* Pods_Nate_Arc1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nate_Arc1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59919076FA76444BE0488D33 /* Pods-Nate_Arc1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate_Arc1.release.xcconfig"; path = "Target Support Files/Pods-Nate_Arc1/Pods-Nate_Arc1.release.xcconfig"; sourceTree = "<group>"; };
+		9C3B80D317FB1252A706DED7 /* Pods-Nate_Arc1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nate_Arc1.debug.xcconfig"; path = "Target Support Files/Pods-Nate_Arc1/Pods-Nate_Arc1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F350454F1C1A62B508109F /* Pods_Nate_Arc1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2F4CD35623245CC30008E02D /* Nate_Arc1 */,
 				2F4CD35523245CC30008E02D /* Products */,
+				F6D06669F22F973AE95E1852 /* Pods */,
+				B9F7B2EC38ACBD27655EF213 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = Nate_Arc1;
 			sourceTree = "<group>";
 		};
+		B9F7B2EC38ACBD27655EF213 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3935133E259CF02F2C47FC62 /* Pods_Nate_Arc1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6D06669F22F973AE95E1852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C3B80D317FB1252A706DED7 /* Pods-Nate_Arc1.debug.xcconfig */,
+				59919076FA76444BE0488D33 /* Pods-Nate_Arc1.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F4CD36623245CC50008E02D /* Build configuration list for PBXNativeTarget "Nate_Arc1" */;
 			buildPhases = (
+				D4BC4DA2DD50C1B685FEE2EB /* [CP] Check Pods Manifest.lock */,
 				2F4CD35023245CC30008E02D /* Sources */,
 				2F4CD35123245CC30008E02D /* Frameworks */,
 				2F4CD35223245CC30008E02D /* Resources */,
+				CBE26F9292B8C9731248DBA5 /* [CP] Embed Pods Frameworks */,
+				1EACDCF288CC5F13D826C903 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +157,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EACDCF288CC5F13D826C903 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate_Arc1/Pods-Nate_Arc1-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate_Arc1/Pods-Nate_Arc1-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nate_Arc1/Pods-Nate_Arc1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE26F9292B8C9731248DBA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate_Arc1/Pods-Nate_Arc1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nate_Arc1/Pods-Nate_Arc1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nate_Arc1/Pods-Nate_Arc1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4BC4DA2DD50C1B685FEE2EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nate_Arc1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F4CD35023245CC30008E02D /* Sources */ = {
@@ -280,6 +367,7 @@
 		};
 		2F4CD36723245CC50008E02D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C3B80D317FB1252A706DED7 /* Pods-Nate_Arc1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +386,7 @@
 		};
 		2F4CD36823245CC50008E02D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59919076FA76444BE0488D33 /* Pods-Nate_Arc1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
